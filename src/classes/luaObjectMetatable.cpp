@@ -221,6 +221,7 @@ Ref<LuaError> LuaDefaultObjectMetatable::__newindex(Object *obj, Ref<LuaAPI> api
 			return dynamic_cast<LuaError *>(ret.operator Object *());
 #endif
 		}
+		return nullptr;
 	}
 
 	Array fields = Array();
